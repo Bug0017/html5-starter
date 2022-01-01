@@ -466,12 +466,14 @@ var _iconHelpers = require("@carbon/icon-helpers");
 function addIconToTheDOM(icon, node) {
     const iconNode = _iconHelpers.toSVG({
         ...icon,
-        attrs: _iconHelpers.getAttributes(_16Default.default.attrs)
+        attrs: _iconHelpers.getAttributes(icon.attrs)
     });
     if (!node.hasChildNodes()) node.appendChild(iconNode);
 }
+const getNode = (nodeId)=>document.getElementById(nodeId)
+;
 // addIcon
-addIconToTheDOM(_16Default.default, document.getElementById('addIcon'));
+addIconToTheDOM(_16Default.default, getNode('addIcon'));
 
 },{"@carbon/icons/es/add/16":"4aYCL","@carbon/icon-helpers":"i1fkr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"4aYCL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
