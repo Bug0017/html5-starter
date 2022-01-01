@@ -1,0 +1,1 @@
+{"mappings":"AAAA;AACA;AACA;AACA;AACA","sources":["style.css"],"sourcesContent":["div#addIcon svg {\r\n    width: 4rem;\r\n    height: 4rem;\r\n    color:indianred;\r\n}"],"names":[],"version":3,"file":"index.de101254.css.map","sourceRoot":"/__parcel_source_root/"}
