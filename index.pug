@@ -1,3 +1,4 @@
+include includes/mixins/productCard
 doctype html
 html(lang="en")
     head
@@ -6,7 +7,16 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
         link(rel="stylesheet", href="style.css")
-        title Html5
+        title Bug
     body 
-        div#addIcon
+        include includes/header
+        section(class="products__wrapper")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
+            +productCard('./assets/images/image1.svg' , "Pizza" , "./assets/images/add-cart.svg")
         script(src="./app.ts" type="module") 

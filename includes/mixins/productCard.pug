@@ -1,0 +1,7 @@
+mixin productCard(imageSrc , name, addToCartImageSrc)
+    div(class="card")
+        img(src=imageSrc, alt=name)
+        p=name 
+        button(class="add__to__cart")
+            img(src=addToCartImageSrc, alt="add to cart")
+            span ADD TO CART

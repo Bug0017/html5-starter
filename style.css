@@ -1,5 +1,39 @@
-div#addIcon svg {
-    width: 4rem;
-    height: 4rem;
-    color:indianred;
+:root{
+    --default-padding:2rem;
+    --default-color:black;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--default-padding);
+    height: 86px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+header .header__left{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    padding: calc(var(--default-padding) *2 )
+}
+.products__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-left: 3rem;
+    margin-top:1rem;
+}
+
+.add__to__cart{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: calc(var(--default-padding) - 1rem);
+    width:100%
 }

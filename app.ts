@@ -1,4 +1,5 @@
-import addIcon from "@carbon/icons/es/add/16";
+import logoIcon from "@carbon/icons/es/bat/32";
+import cartIcon from "@carbon/icons/es/shopping--cart/32"
 import { getAttributes, toSVG } from "@carbon/icon-helpers";
 function addIconToTheDOM(icon , node:HTMLElement){
     const iconNode = toSVG({
@@ -13,4 +14,5 @@ function addIconToTheDOM(icon , node:HTMLElement){
 
 const getNode = (nodeId) => document.getElementById(nodeId);
 // addIcon
-addIconToTheDOM(addIcon, getNode('addIcon'));
+addIconToTheDOM(logoIcon, getNode('logoIcon'));
+addIconToTheDOM(cartIcon, getNode("cartIcon"));
